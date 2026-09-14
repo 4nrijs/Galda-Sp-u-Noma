@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="lv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galda Spēļu Noma</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Top bar -->
+  <header class="top-bar" id="topBar">
+    <div class="top-bar__inner">
+  <a class="brand" href="#">Galda Spēļu Noma</a>
+
+  <form class="search" role="search" aria-label="Produktu meklēšana">
+    <input id="searchInput" type="search" placeholder="Meklēt spēles..." />
+    <button type="submit">Meklēt</button>
+  </form>
+
+  <a class="cart-btn" href="#cart">cart</a>
+</div>
+  </header>
+
+  <!-- Page content -->
+  <main class="page">
+    <!-- Slideshow / carousel -->
+<section class="section hero">
+  <div class="carousel carousel--hero" aria-label="Produktu slaidrāde">
+    <button class="carousel__btn" id="prevBtn" aria-label="Iepriekšējais">‹</button>
+
+    <div class="carousel__viewport" id="carouselViewport">
+      <div class="carousel__track" id="carouselTrack">
+        <!-- One product per slide (each card fills viewport width) -->
+        <article class="slide card" data-category="gimenes">
+          <div class="card__img">Catan</div>
+          <div class="card__meta">
+            <div class="card__title">Catan</div>
+            <div class="card__price">€5 / dienā</div>
+          </div>
+        </article>
+
+        <article class="slide card" data-category="gimenes">
+          <div class="card__img">Ticket to Ride</div>
+          <div class="card__meta">
+            <div class="card__title">Ticket to Ride</div>
+            <div class="card__price">€6 / dienā</div>
+          </div>
+        </article>
+
+        <article class="slide card" data-category="bernu">
+          <div class="card__img">Uno</div>
+          <div class="card__meta">
+            <div class="card__title">Uno</div>
+            <div class="card__price">€2 / dienā</div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <button class="carousel__btn" id="nextBtn" aria-label="Nākamais">›</button>
+  </div>
+</section>
+
+    <!-- Categories (3-column horizontal grid) -->
+    <section class="section">
+      <h2 class="section__title">Kategorijas</h2>
+
+      <div class="cat-grid">
+        <!-- Left: openable list -->
+        <details class="cat cat--details">
+          <summary class="cat__summary">Kategorijas</summary>
+          <div class="cat__panel">
+            <a href="#" class="cat__link">Stratēģijas spēles</a>
+            <a href="#" class="cat__link">Ballīšu spēles</a>
+            <a href="#" class="cat__link">Kāršu spēles</a>
+            <a href="#" class="cat__link">Kooperatīvās spēles</a>
+            <a href="#" class="cat__link">Diviem spēlētājiem</a>
+          </div>
+        </details>
+
+        <!-- Middle -->
+        <a class="cat" href="#">
+          Ģimenes Spēles
+        </a>
+
+        <!-- Right -->
+        <a class="cat" href="#">
+          Bērnu Spēles
+        </a>
+      </div>
+    </section>
+
+    <!-- Some filler so you can see sticky bar while scrolling -->
+    <section class="section">
+      <h2 class="section__title">Par mums</h2>
+      <p class="text">
+        Šeit vari ielikt projekta aprakstu. Ritinot lapu uz leju, augšējā josla paliek redzama.
+      </p>
+      <div style="height: 900px;"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
