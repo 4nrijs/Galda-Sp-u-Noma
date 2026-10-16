@@ -12,8 +12,8 @@ body {
 
   /* Two-layer background: orange image under, icons over */
   background-image:
-   url(../moving-icons.png),
-    url(../orang.png);
+   url("moving-icons.png"),
+    url("orang.png");
 
   /* Icons layer repeats; orange layer covers */
   background-repeat:
