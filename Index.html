@@ -3,22 +3,22 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Galda Spēļu Noma</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Met Kauliņu</title>
+  <link rel="stylesheet" href="Styles.css" />
 </head>
 
 <body>
   <!-- Top bar -->
   <header class="top-bar" id="topBar">
     <div class="top-bar__inner">
-  <a class="brand" href="#">Galda Spēļu Noma</a>
+  <a class="brand" href="#">Met Kauliņu</a>
 
   <form class="search" role="search" aria-label="Produktu meklēšana">
     <input id="searchInput" type="search" placeholder="Meklēt spēles..." />
     <button type="submit">Meklēt</button>
   </form>
 
-  <a class="cart-btn" href="#cart">cart</a>
+  <a class="cart-btn" href="#cart">Grozs</a>
 </div>
   </header>
 
@@ -33,25 +33,34 @@
       <div class="carousel__track" id="carouselTrack">
         <!-- One product per slide (each card fills viewport width) -->
         <article class="slide card" data-category="gimenes">
-          <div class="card__img">Catan</div>
+          <div class="card__img">
+            <img src="../images\Katana-no backg.png" alt="Catan">
+          </div>
           <div class="card__meta">
             <div class="card__title">Catan</div>
+            <button class="order-btn" type="button">Pasūtīt</button>
             <div class="card__price">€5 / dienā</div>
           </div>
         </article>
 
         <article class="slide card" data-category="gimenes">
-          <div class="card__img">Ticket to Ride</div>
+          <div class="card__img">
+            <img src="../images\Ride-or-die-trns.png" alt="Ticket to Ride">
+          </div>
           <div class="card__meta">
             <div class="card__title">Ticket to Ride</div>
+            <button class="order-btn" type="button">Pasūtīt</button>
             <div class="card__price">€6 / dienā</div>
           </div>
         </article>
 
         <article class="slide card" data-category="bernu">
-          <div class="card__img">Uno</div>
+          <div class="card__img">
+            <img src="../images\Uno-no-back.png" alt="Uno">
+          </div>
           <div class="card__meta">
             <div class="card__title">Uno</div>
+            <button class="order-btn" type="button">Pasūtīt</button>
             <div class="card__price">€2 / dienā</div>
           </div>
         </article>
@@ -95,12 +104,12 @@
     <section class="section">
       <h2 class="section__title">Par mums</h2>
       <p class="text">
-        Šeit vari ielikt projekta aprakstu. Ritinot lapu uz leju, augšējā josla paliek redzama.
+        Met Kauliņu ir galda spēļu nomas veikals!
       </p>
       <div style="height: 900px;"></div>
     </section>
   </main>
 
-  <script src="script.js"></script>
+  <script src="Script.js"></script>
 </body>
 </html>

@@ -112,3 +112,9 @@ setInterval(() => next(), 3500);
 window.addEventListener("resize", () => jumpToIndex(index));
 
 setupInfiniteCarousel();
+
+document.addEventListener("click", (e) => {
+  if (e.target.classList.contains("order-btn")) {
+    alert("Pievienots grozam!");
+  }
+});
